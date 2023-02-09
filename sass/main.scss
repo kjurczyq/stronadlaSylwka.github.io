@@ -1,0 +1,358 @@
+@import "./colors";
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-padding-top: 82px;
+}
+body {
+  position: relative;
+  font-family: "Montserrat", sans-serif, "Press Start 2P", cursive;
+
+  background-color: $backgroud-color-dashbord;
+}
+.shadow-bg {
+  background-color: rgb(0, 0, 0, 0.8);
+}
+.red-logo-text {
+  color: $red-text;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.aboutme {
+  i {
+    font-size: 40px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    color: $white-font;
+  }
+
+  h2 {
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: solid;
+    font-family: "Press Start 2P", cursive;
+    padding-top: 10px;
+    color: $nav-color;
+  }
+  .underline {
+    margin: 0 auto;
+    width: 240px;
+    height: 4px;
+    background-color: $red-text;
+  }
+  .aboutme-card-description {
+    padding-top: 45px;
+    padding-bottom: 45px;
+    text-align: justify;
+  }
+  .aboutme-card-title {
+    font-size: 23px;
+    padding-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    padding-bottom: 35px;
+  }
+  .aboutme-card-title-1 {
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  .aboutme-icon {
+    margin: 15px 0;
+  }
+  .aboutme-hover {
+    transition: background-color 0.3s;
+  }
+  .aboutme-hover:hover {
+    background-color: $aboutme-hover;
+  }
+  .aboutme-img {
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    background-image: url("../img/board-small.jpg");
+    color: aliceblue;
+  }
+  .aboutme-shadow {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0, 0.8);
+    z-index: -2;
+  }
+  .photo-sylwek {
+    padding-bottom: 50px;
+  }
+}
+.aboutme-underline {
+  width: 100vh;
+  height: 4px;
+  background-color: $red-text;
+}
+.services {
+  i {
+    font-size: 40px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    color: $nav-color;
+  }
+  .services-card-title {
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    color: $nav-color;
+  }
+  .services-card-title-1 {
+    font-size: 18px;
+    text-transform: uppercase;
+    text-align: center;
+    color: $nav-color;
+  }
+  .services-card-text {
+    font-size: 15px;
+    text-align: center;
+    color: $nav-color;
+  }
+  .services-hover {
+    transition: background-color 0.3s;
+  }
+  .services-hover:hover {
+    background-color: $service-hover;
+  }
+  .services-carusel {
+    padding-top: 40px;
+  }
+  .carousel-item {
+    position: relative;
+    height: 600px;
+  }
+  .carousel-caption {
+    position: absolute;
+    background-color: $nav-color;
+    left: 0px;
+    right: 0px;
+    padding: 40px 0px;
+  }
+  .carousel-indicators {
+    padding-bottom: 20px;
+  }
+  .card-group {
+    padding-top: 50px;
+  }
+  .card-img-top {
+    height: 180px;
+  }
+}
+
+.container-price h2 {
+  color: $white-font;
+}
+p.services-card-title.p-price {
+  color: $white-font;
+}
+.map {
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+  padding-bottom: 40px;
+}
+
+.price-wrap {
+  margin-top: 0px;
+}
+.price-box {
+  padding: 30px;
+  background-color: rgb(246, 250, 250);
+  box-shadow: 5px 5px 5px rgb(0, 0, 0, 0.4);
+  margin: 15px;
+  h3 {
+    font-size: 20px;
+    color: $nav-color;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  span {
+    font-weight: bold;
+  }
+}
+div.row.text-center {
+  padding: 20px;
+}
+
+nav {
+  text-transform: uppercase;
+  width: 100%;
+  transition: background-color 0.6s;
+  background-color: $nav-color;
+
+  a.nav-link.btn {
+    color: $white-font;
+  }
+  a.nav-link.btn:hover {
+    color: $yellow-hover;
+  }
+  a.nav-link.btn.active {
+    color: $yellow-hover;
+  }
+  i {
+    color: $white-font;
+    font-size: 20px;
+    padding-top: 10px;
+  }
+  a.navbar-brand {
+    color: $white-font;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: "Press Start 2P", cursive;
+  }
+  .fa-bars {
+    padding: 10px;
+    padding-right: 24px;
+  }
+  z-index: 1;
+}
+
+header {
+  color: $white-font;
+
+  h1 {
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bold;
+    color: $red-text;
+    font-family: "Press Start 2P", cursive;
+  }
+  p {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .red-text {
+    color: $red-text;
+  }
+  .hero-img {
+    position: relative;
+    height: 100vh;
+    background-image: url("../img/pc_fix_small.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+  }
+  .hero-shadow {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0, 0.8);
+    z-index: -2;
+  }
+  .hero-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    z-index: 1;
+    padding: 10px;
+    text-align: center;
+  }
+  .btn-outline-light {
+    text-transform: uppercase;
+  }
+  .fa-chevron-down:before {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: 20px;
+    font-size: 40px;
+    color: $white-font;
+  }
+}
+@media (min-width: 375px) {
+  .red-logo-text {
+    color: $red-text;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  .div.hero-text {
+    height: 100%;
+  }
+  nav a.navbar-brand {
+    color: $white-font;
+    font-weight: bold;
+    font-size: 18px;
+  }
+  h2 {
+    font-size: 18px;
+  }
+  header {
+    h1 {
+      text-transform: uppercase;
+      font-size: 20px;
+      font-weight: bold;
+      color: $red-text;
+    }
+    p {
+      font-size: 18px;
+    }
+  }
+}
+@media (min-width: 1024px) {
+  .red-logo-text {
+    color: $red-text;
+    font-size: 35px;
+    font-weight: bold;
+  }
+
+  nav a.navbar-brand {
+    color: $white-font;
+    font-weight: bold;
+    font-size: 35px;
+  }
+  .fa-microchip:before {
+    font-size: 25px;
+  }
+  nav a.nav-link.btn {
+    font-size: 20px;
+  }
+  header {
+    h1 {
+      text-transform: uppercase;
+      font-size: 35px;
+      font-weight: bold;
+      color: $red-text;
+    }
+    p {
+      font-size: 25px;
+    }
+  }
+}
+@media (min-width: 1200px) {
+  header {
+    .hero-img {
+      position: relative;
+      height: 100vh;
+      background-position: center;
+      background-size: cover;
+      background-attachment: fixed;
+      background-image: url("../img/pc_fix_big.jpg");
+    }
+  }
+  .aboutme-img {
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    background-image: url("../img/board-big.jpg");
+    color: aliceblue;
+  }
+}
